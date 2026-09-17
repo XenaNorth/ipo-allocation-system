@@ -1,4 +1,4 @@
-package com.example.ipo_allocation_system;
+package com.example.ipoallocationsystem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

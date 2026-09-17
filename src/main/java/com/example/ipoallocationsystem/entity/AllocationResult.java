@@ -1,4 +1,4 @@
-package com.example.ipo_allocation_system.entity;
+package com.example.ipoallocationsystem.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

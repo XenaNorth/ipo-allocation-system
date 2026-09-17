@@ -1,4 +1,4 @@
-package com.example.ipo_allocation_system.entity;
+package com.example.ipoallocationsystem.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -18,11 +18,11 @@ public class Ipo {
     private Integer totalShares;
     private BigDecimal pricePerShare;
     private Integer maxSharesPerInvestor;
-    private enum IpoStatus {
+    public enum IpoStatus {
         OPEN, CLOSED, ALLOCATED;
     }
     @Enumerated(EnumType.STRING)
     private IpoStatus status = IpoStatus.OPEN;
 
-    private LocalDateTime createdAt;
+    private LocalDateTime createdAt = LocalDateTime.now();
 }
